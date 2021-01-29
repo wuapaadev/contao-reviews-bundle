@@ -23,7 +23,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(ContaoGooglePlacesBundle::class)
+            BundleConfig::create(ContaoReviewsBundle::class)
                 ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
