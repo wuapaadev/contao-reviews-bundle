@@ -1,3 +1,3 @@
- Contao GoooglePlaces Bundle
+Contao Reviews Bundle
 
-This bundle displays elements from Google Myplaces.
+This bundle displays User-Reviews (currently only elements from Google Places).

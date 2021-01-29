@@ -10,10 +10,10 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace Wuapaa\ContaoGooglePlacesBundle;
+namespace Wuapaa\ContaoReviewsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ContaoGooglePlacesBundle extends Bundle
+class ContaoReviewsBundle extends Bundle
 {
 }

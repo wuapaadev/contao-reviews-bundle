@@ -10,13 +10,13 @@ declare(strict_types=1);
  * @license LGPL-3.0-or-later
  */
 
-namespace Wuapaa\ContaoGooglePlacesBundle\ContaoManager;
+namespace Wuapaa\ContaoReviewsBundle\ContaoManager;
 
 use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use Wuapaa\ContaoGooglePlacesBundle\ContaoGooglePlacesBundle;
+use Wuapaa\ContaoReviewsBundle\ContaoReviewsBundle;
 
 class Plugin implements BundlePluginInterface
 {

@@ -1,7 +1,7 @@
 {
-    "name": "wuapaa/contao-googleplaces-bundle",
+    "name": "wuapaa/contao-reviews-bundle",
     "type": "contao-bundle",
-    "description": "Google Places Extension for Contao 4",
+    "description": "Display Reviews (Google Places) for Contao 4",
     "homepage": "https://contao.org",
     "license": "commercial",
     "authors": [
@@ -28,16 +28,16 @@
         "symfony/phpunit-bridge": "^4.4 || ^5.1"
     },
     "extra": {
-        "contao-manager-plugin": "Wuapaa\\ContaoGooglePlacesBundle\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Wuapaa\\ContaoReviewsBundle\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
-            "Wuapaa\\ContaoGooglePlacesBundle\\": "src/"
+            "Wuapaa\\ContaoReviewsBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Wuapaa\\ContaoGooglePlacesBundle\\Tests\\": "tests/"
+            "Wuapaa\\ContaoReviewsBundle\\Tests\\": "tests/"
         }
     },
     "support": {
