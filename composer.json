@@ -1,0 +1,52 @@
+{
+    "name": "wuapaa/contao-googleplaces-bundle",
+    "type": "contao-bundle",
+    "description": "Google Places Extension for Contao 4",
+    "homepage": "https://contao.org",
+    "license": "commercial",
+    "authors": [
+        {
+            "name": "Wuapaa",
+            "homepage": "https://www.wuapaa.com"
+        }
+        
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "contao/core-bundle": "^4.9",
+        "symfony/config": "^4.4 || ^5.1",
+        "symfony/dependency-injection": "^4.4 || ^5.1",
+        "symfony/http-kernel": "^4.4 || ^5.1"
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0",
+        "contao/easy-coding-standard": "^2.0",
+        "phpunit/phpunit": "^8.4",
+        "symfony/phpunit-bridge": "^4.4 || ^5.1"
+    },
+    "extra": {
+        "contao-manager-plugin": "Wuapaa\\ContaoGooglePlacesBundle\\ContaoManager\\Plugin"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wuapaa\\ContaoGooglePlacesBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wuapaa\\ContaoGooglePlacesBundle\\Tests\\": "tests/"
+        }
+    },
+    "support": {
+        "issues": "https://www.wuapaa.com",
+        "source": "https://www.wuapaa.com"
+    },
+    "scripts": {
+        "cs-fixer": [
+            "vendor/bin/ecs check src/ tests/ --fix --ansi"
+        ]
+    }
+}
