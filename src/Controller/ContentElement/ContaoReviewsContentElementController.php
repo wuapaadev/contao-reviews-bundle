@@ -15,7 +15,7 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class ContaoReviewsContentElementController extends AbstractContentElementController
 {
-    public const TYPE = 'reviews';
+    public const TYPE = 'ce_reviews';
 
     protected function getResponse(Template $template, ContentModel $model, Request $request): ?Response
     {

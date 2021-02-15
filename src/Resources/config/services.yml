@@ -2,16 +2,16 @@ services:
     _defaults:
         autoconfigure: true
         autowire: true
-    
-    Wuapaa\ContaoReviewsBundle\Controller\ContentElement\ReviewsController: ~
+    _instanceof:
+        Contao\CoreBundle\Framework\FrameworkAwareInterface:
+            calls:
+                - ["setFramework", ["@contao.framework"]]
+
+        Symfony\Component\DependencyInjection\ContainerAwareInterface:
+            calls:
+                - ["setContainer", ["@service_container"]] 
+
+    Wuapaa\ContaoReviewsBundle\Controller\ContentElement\ContaoReviewsContentElementController: ~
     Wuapaa\ContaoReviewsBundle\Controller\FrontendModule\ContaoReviewsFrontendModuleController: ~
     
-    App\Controller\ContentElement\MyContentElementController:
-        tags:
-            -
-                name: contao.content_element
-                category: texts
-                template: ce_my_content_element
-                method: getCustomResponse
-                renderer: esi
-                type: my_custom_type
+    

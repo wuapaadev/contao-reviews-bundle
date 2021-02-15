@@ -1,6 +1,4 @@
-<div class="my-frontend-module">   
-  <form action="<?= $this->action ?>" method="POST"> 
-    <input type="hidden" name="REQUEST_TOKEN" value="{{request_token}}">
-    <button type="submit">Submit</button>
-  </form>
+<div class="mod_reviews <?php echo $this->class; ?> block">
+    <div class="my-rating"><span style="color:#828282">
+      <?php echo number_format($this->rating,1) ?></span><?php echo $this->star?></div>
 </div>
