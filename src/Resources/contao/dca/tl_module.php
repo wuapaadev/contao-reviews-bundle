@@ -69,7 +69,7 @@ class tl_module_reviews extends Contao\Backend
 				$arrReviews[$objReviews->id] = $objReviews->title;
 			//}
 		}
-        print_r($arrReviews);
+       
 		return $arrReviews;
 	}
 }

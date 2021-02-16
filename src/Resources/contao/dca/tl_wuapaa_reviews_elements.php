@@ -41,8 +41,31 @@ $GLOBALS['TL_DCA']['tl_wuapaa_reviews_elements'] = array
 				'id' => 'primary'
 			)
 		)
-			),
-			'fields' => array
+	),
+	'list' => array(
+		'sorting' => array
+		(
+			'mode'                    => 4,
+			'fields'                  => array('title'),
+			'flag'                    => 1,
+			'headerFields'          => ['title'],
+			'panelLayout'             => '',
+			'child_record_callback' => ['tl_wuapaa_reviews_elements', 'listElements'],
+		),
+		'label' => array
+		(
+			'fields'                  => array('title','placesID','placesresult'),
+			'format'                  => '%s'
+		),
+	),
+	'operations' => array(
+		'show' => array
+			(
+				'href'                => 'act=show',
+				'icon'                => 'show.svg'
+			)
+	),
+	'fields' => array
 	(
 		'id' => array
 		(
@@ -78,9 +101,24 @@ $GLOBALS['TL_DCA']['tl_wuapaa_reviews_elements'] = array
 		(
 			'exclude'                 => true,
 			'search'                  => true,
+			'default'				  => '',
 			'inputType'               => 'text',
 			'eval'                    => array('mandatory'=>true),
 			'sql'                     => "text NOT NULL default ''"
         )
-    )
+	),
+
+		
 );
+class tl_wuapaa_reviews_elements extends Contao\Backend
+{
+	public function listElements($arrRow)
+    {
+		
+        $key    = $arrRow['published'] ? 'published' : 'unpublished';
+        $return = '<div><strong>' . $arrRow['title'] . '</strong></div><div>'.$arrRow['placesresult'].'</div>'
+                  . "\n";
+
+        return $return;
+    }
+}

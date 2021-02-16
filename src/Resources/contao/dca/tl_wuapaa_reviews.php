@@ -125,6 +125,7 @@ $GLOBALS['TL_DCA']['tl_wuapaa_reviews'] = array
 		),
 		'title' => array
 		(
+			'label'					=>&$GLOBALS['TL_LANG']['tl_module']['reviews_title'],	
 			'exclude'                 => true,
 			'search'                  => true,
 			'inputType'               => 'text',
