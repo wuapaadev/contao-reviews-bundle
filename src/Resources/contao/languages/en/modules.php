@@ -18,6 +18,9 @@ $GLOBALS['TL_LANG']['MOD']['wuapaa_reviews'] = [
 $GLOBALS['TL_LANG']['tl_module']['reviews_title'] = array(
     'Title','Title of Review'
 );
+$GLOBALS['TL_LANG']['tl_module']['reviews_legend'] = 'Reviews';
+$GLOBALS['TL_LANG']['tl_module']['reviews'] = array('Review-archive','Select the review-archive to display');
+
 $GLOBALS['TL_LANG']['tl_wuapaa_reviews']['title_legend'] = 'Title';
 $GLOBALS['TL_LANG']['tl_wuapaa_reviews']['type'] = array('Type','Select Type');
 $GLOBALS['TL_LANG']['tl_wuapaa_reviews']['type_legend'] = 'Type';

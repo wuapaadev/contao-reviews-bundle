@@ -22,7 +22,7 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class ContaoReviewsFrontendModuleController extends AbstractFrontendModuleController
 {
-    public const TYPE = 'mod_reviews';
+    public const TYPE = 'reviews';
 
    
 
