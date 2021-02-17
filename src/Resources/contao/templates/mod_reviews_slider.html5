@@ -1,0 +1,29 @@
+<div class="mod_reviews <?php echo $this->class; ?> ce_sliderStart block"> 
+    <div class="reviews content-slider" data-config="2000,800,2,1">
+	<div class="slider-wrapper">
+	<?php foreach ($this->reviews as $review){ ?>
+		<div class="review google">
+		  <div class="userrating">
+		  <?php
+		  $star="";
+		  $starstmpl = '<span class="review-star">*</span>';
+            for ($i = 0; $i < number_format($review->rating,1); $i++) {
+                $star .= $starstmpl;
+            }
+		  ?>
+		  <?= $star ?></div>
+		  <div class="text"><p><?= $review->text ?></p></div>
+		  <div class="author">
+			<figure class="image_container">
+			  <img src="<?= $review->profile_photo_url ?>" alt="" width="50" height="50"/>
+			  <div class="authorname">
+				<h2><?= $review->author_name ?></h2>
+				<p><?= $review->relative_time_description ?></p>
+			  </div>
+			</figure>
+		  </div>
+		</div>
+	<?php }?>
+     </div>
+	</div>
+</div>
