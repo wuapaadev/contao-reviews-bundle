@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\Response;
  * @FrontendModule(
  *  ContaoReviewsFrontendModuleController::TYPE,
  *  category="miscellaneous",
- *  template = "mod_contao_review",
+ *  template = "mod_reviews",
  *  
  * )
  */
