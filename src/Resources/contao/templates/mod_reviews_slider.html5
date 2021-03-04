@@ -1,4 +1,4 @@
-<div class="mod_reviews <?php echo $this->class; ?> ce_sliderStart block"> 
+<div class="<?= $this->class; ?> ce_sliderStart block" <?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?> > 
     <div class="reviews content-slider" data-config="2000,800,2,1">
 	<div class="slider-wrapper">
 	<?php foreach ($this->reviews as $review){ ?>
